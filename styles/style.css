@@ -72,6 +72,7 @@
 
 .tel{
     text-align: right;
+    margin: 0 0 0 430px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -95,7 +96,6 @@
     line-height: 16px;
     text-align: center;
 }
-
 
 .second_line_main_menu{
     display: flex;
@@ -121,30 +121,30 @@
 
 
 .group{
+    position: relative;
     display: flex;
-    text-align: center;
-    position: relative; 
-    
+    text-align: center;    
 
 }
 
 .group_text_box{
+    position: absolute;
     display: flex;
-    z-index: 0;
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
-    align-items: center;
     flex-wrap: wrap;
-    
+    align-content: center;
+    justify-content: flex-start;
+    width: 38%;
+    height: 100%; 
 
-}
+} 
+
+
 
 .super_chair{
-    position: absolute;
-    left: 10%;
-    top: 25%;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    padding: 0 0 0 18%;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -155,11 +155,10 @@
 }
 
 .text_fish{
-    position: absolute;
-    width: 27.5%;
-    z-index: 2;
-    left: 9%;
-    top: 45%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 8% 0 8% 18%;
+    text-align: left;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -168,14 +167,16 @@
     color: #FFFFFF;
 }
 
-.group button{
-    position: absolute;
-    z-index: 3;
-    width: 15.23%;
-    height: 11.34%;
-    left: 10%;
-    top: 65%;
-    padding: 11px 56px;    
+.bbut{
+    display: flex;
+    padding: 0 0 0 18%;
+}
+
+
+.group_text_box button{
+    display: flex;
+    justify-content: flex-start;
+    padding: 25% 165%;    
     border: 2px solid #FFFFFF;
     background: #F13C6E;
     border-radius: 40px;
@@ -193,7 +194,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -443,7 +443,7 @@
 
 .categories{
     display: flex;
-    padding: 6%  9% 5% 0;
+    padding: 6%  7% 5% 0;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -501,23 +501,23 @@
     line-height: 19px;
     }
 
-.social_network a{
-    margin: 20px;
-}
-
-.social_network button{
-padding: 11px 56px;
-border: 2px solid #F13C6E;
-border-radius: 40px;
-background-color: #FFFFFF;
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-        
-}
+    .social_network a{
+        margin: 20px;
+    }
+    
+    .social_network button{
+    padding: 11px 56px;
+    border: 2px solid #F13C6E;
+    border-radius: 40px;
+    background-color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+            
+    }
 
 .ppolicy{
     display: flex;
