@@ -72,7 +72,6 @@
 
 .tel{
     text-align: right;
-    margin: 0 0 0 430px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -80,8 +79,8 @@
     line-height: 19px;
 }
 
-.tel a{
-    margin-right: 20px;
+.tel span{
+    margin: 0 15px 0 0;
 }
 
 .tel button{
@@ -133,17 +132,16 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
-    width: 38%;
+    max-width: 38%;
     height: 100%; 
+    
 
 } 
-
-
 
 .super_chair{
     display: flex;
     justify-content: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     padding: 0 0 0 18%;
     font-family: 'Roboto';
     font-style: normal;
@@ -173,10 +171,10 @@
 }
 
 
-.group_text_box button{
+.group button{
     display: flex;
     justify-content: flex-start;
-    padding: 25% 165%;    
+    padding: 10px 65px;    
     border: 2px solid #FFFFFF;
     background: #F13C6E;
     border-radius: 40px;
@@ -204,19 +202,27 @@
     color: #FFFFFF;
 }
 
+.goods_sale{
+    display: flex;
+    padding: 30px 0;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center ;
+    background: #E5E5E5;
+}
 .goods{
     display: flex;
     flex-direction: column;
     align-content: space-around;
-    background: #E5E5E5;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .goods h2{
     display: flex;
-    margin: 80px 0 0 19px;
+    padding: 30px;
     justify-content: flex-start;
+    flex-wrap: wrap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -227,7 +233,8 @@
 .boxes{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    min-width: 1220px;
 }
 
 .box{
@@ -237,9 +244,9 @@
     background-color: #fff;
     padding: 25px;
     max-width: 255px;
-    margin: 38px 15px 50px 15px;
     
 }
+
 
 .box img{
     width: 125px;
@@ -285,9 +292,10 @@
 
 .get_visit{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
-    background: #E5E5E5;
+    min-width: 1220px;
+    margin: 100px 0 0 0;
 
 }
 
@@ -335,32 +343,37 @@
 .get_bonus{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    width: 540px;
-    padding: 20px;
-    margin: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    min-width: 540px;
     background: #F13C6E;
 }
 
 .visit_us{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: stretch;
-    width: 540px;
-    padding: 20px;
-    margin: 15px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    min-width: 540px;
     background: #F13C6E;
 }
 
+.visit_us p, .get_bonus p{
+    margin: 25px 0;
+}
+
 .bonus_img{
-    width: 140px;
+    min-width: 140px;
+    margin: 10px;
 }
 
 .visit_img{
     display: flex;
-    width: 234px;
+    min-width: 230px;
     padding: 22px;
+    margin: 0 10px 0 10px;
 }
 
 .conteiner_text2{
@@ -413,8 +426,6 @@
     flex-wrap: wrap-reverse;
     background: #FFFFFF;
     
- 
-
 } 
 
 .aline>img{
@@ -433,11 +444,9 @@
 
 .box_impuls{
     display: flex;
-    width: 100%;
-    padding: 100px 0 0;
+    margin: 100px 0 0;
     justify-content: center;    
-    background: #E5E5E5;
-
+    min-width: 1220px;
 }
 
 
@@ -486,10 +495,10 @@
     flex-wrap: wrap;
 }
 
-.logo img{
+.logo{
     display: flex;
     flex-direction: row;
-    padding: 0 10px;
+    gap: 10px;
 }
 
 .social_network{
@@ -502,7 +511,7 @@
     }
 
     .social_network a{
-        margin: 20px;
+        margin: 0 20px 0 0;
     }
     
     .social_network button{
